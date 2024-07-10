@@ -1,0 +1,134 @@
+.shape {
+    border-radius: 50%;
+    /* border: 5px solid rgb(56, 203, 56); */
+    /* color: rgb(178, 255, 178); */
+
+}
+
+
+
+.paragraph {
+    /* Add specific styles for your paragraph here */
+    margin: 0;
+    /* Reset margin */
+    font-size: 16px;
+    /* Example font size */
+    /* Add any other styles you need */
+}
+
+.heading1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: rgb(0, 67, 155);
+    /* Match heading color */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: rgb(0, 57, 135);
+    /* Slightly darker blue */
+    transform: translateY(-5px);
+    /* Move up slightly */
+}
+
+/* Active effect */
+.btn:active {
+    transform: translateY(-2px);
+    /* Move up less */
+}
+
+/* Focus effect */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 67, 155, 0.4);
+}
+
+
+@media (max-width: 1200px) {
+    .mydiv {
+        margin-left: 5px;
+        /* Equivalent to mx-40 */
+        margin-right: 5px;
+        /* Equivalent to mx-40 */
+    }
+}
+
+.navItems {
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.section {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.section p {
+    margin: 5px 0;
+    color: black;
+}
+
+.dataContainer {
+    max-width: 800px;
+    /* width: 800px; */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+    color: blue;
+    /* Adjust margin below section heading */
+}
+
+.section ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+    margin-right: 20px;
+    /* Adjust margin between list items */
+}
