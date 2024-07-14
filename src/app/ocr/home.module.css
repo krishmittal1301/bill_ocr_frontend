@@ -1,0 +1,30 @@
+.heading1 {
+    font-size: 50px;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bold;
+    /* background: linear-gradient(to right, #4B0082, #a089b6); */
+    /* Indigo to Blue Violet */
+background: #959595;
+    background: linear-gradient(90.09deg, #1a2a6c 17.61%, #0c81ee 47.78%, #f9185b 78.77%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shape {
+    border-style: solid;
+    border-width: 2px;
+    /* width: 200px; */
+    /* height: 200px; */
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 139, 0.6);
+    /* always present shadow */
+    transition: transform  0.3s ease;
+    /* smooth transition for transform */
+}
+
+.shape:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 5px 10px rgba(27, 27, 226, 0.6); */
+    /* move along Z-axis */
+}

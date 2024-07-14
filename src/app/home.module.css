@@ -132,3 +132,28 @@
     margin-right: 20px;
     /* Adjust margin between list items */
 }
+
+
+.navItem {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navItem::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(68, 0, 170);
+    transition: width 0.3s ease-in-out;
+}
+
+.navItem:hover::after {
+    width: 100%;
+}
+
+.active {
+    font-weight: bold;
+}
