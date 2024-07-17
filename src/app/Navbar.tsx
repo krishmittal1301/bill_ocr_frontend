@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '@/app/home.module.css';
 import { useRouter ,usePathname} from 'next/navigation';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,10 +31,10 @@ const Navbar = () => {
         Menu
       </button>
       <div className={`flex flex-col md:flex-row items-center md:space-x-5 ${menuOpen ? 'max-h-screen my-2' : 'max-h-0'} md:max-h-full ${styles.navItems}`}>
-        <div className={`${styles.navItem} ${pathname === '/' ? styles.active : ''}`}><a href="/">Home</a></div>
-        <div className={`${styles.navItem} ${pathname === '/ocr' ? styles.active : ''}`}><a href="/ocr">OCR DOCS</a></div>
-        <div className={`${styles.navItem} ${pathname === '/text-rendering' ? styles.active : ''}`}><a href="/text-rendering">Text Rendering</a></div>
-        <div className={`${styles.navItem} ${pathname === '/clutter-removal' ? styles.active : ''}`}><a href="/clutter-removal">Clutter Removal</a></div>
+        <div className={`${styles.navItem} ${pathname === '/' ? styles.active : ''}`}><Link href="/">Home</Link></div>
+        <div className={`${styles.navItem} ${pathname === '/ocr' ? styles.active : ''}`}><Link href="/ocr">OCR DOCS</Link></div>
+        <div className={`${styles.navItem} ${pathname === '/text-rendering' ? styles.active : ''}`}><Link href="/text-rendering">Text Rendering</Link></div>
+        <div className={`${styles.navItem} ${pathname === '/clutter-removal' ? styles.active : ''}`}><Link href="/clutter-removal">Clutter Removal</Link></div>
       </div>
     </nav>
   );
