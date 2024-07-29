@@ -13,7 +13,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Add any head tags like meta, link, title here */}
+          <link rel="shortcut icon" href="Frame_2.svg" type="image/x-icon" />
+          <title>OCR</title>
       </head>
       <body className={`${inter.className} antialiased`}>
         <main>{children}</main>

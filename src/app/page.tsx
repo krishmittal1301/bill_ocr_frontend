@@ -1,7 +1,5 @@
 "use client";
 import React, { useState, useRef ,ChangeEvent} from 'react';
-import ReactDOM from "react-dom/client";
-import RootLayout from './layout';
 import styles from '@/app/home.module.css';
 import '@/app/globals.css';
 import Navbar from './Navbar';

@@ -157,3 +157,11 @@
 .active {
     font-weight: bold;
 }
+
+.img_logo {
+    padding: -10px;
+    /* Maintain aspect ratio */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+
