@@ -1,0 +1,88 @@
+.heading1 {
+    font-size: 70px;
+    margin: 25px;
+    padding: 28px;
+    font-weight: bold;
+    /* background: linear-gradient(to right, #4B0082, #a089b6); */
+    /* Indigo to Blue Violet */
+background: #959595;
+    background: linear-gradient(90.09deg, #1a2a6c 17.61%, #0c81ee 47.78%, #f9185b 78.77%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shape {
+    border-style: solid;
+    border-width: 2px;
+    /* width: 200px; */
+    /* height: 200px; */
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 139, 0.6);
+    /* always present shadow */
+    transition: transform  0.3s ease;
+    /* smooth transition for transform */
+}
+
+.shape:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 5px 10px rgba(27, 27, 226, 0.6); */
+    /* move along Z-axis */
+}
+
+
+.btn {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: rgb(0, 67, 155);
+    /* Match heading color */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: rgb(0, 57, 135);
+    /* Slightly darker blue */
+    transform: translateY(-5px);
+    /* Move up slightly */
+}
+
+/* Active effect */
+.btn:active {
+    transform: translateY(-2px);
+    /* Move up less */
+}
+
+/* Focus effect */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 67, 155, 0.4);
+}
+
+
+.box {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 144px;
+    height: 55px;
+    margin-top: 10px;
+    border-radius: 50px;
+    /* background: var(--accent); */
+    background-color: rgb(234, 252, 122);
+    /* background-color: #f9185b; */
+    /* border: #f9185b; */
+    color: rgb(0, 37, 69);
+    text-align: center;
+    font: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    padding: auto;
+    cursor: pointer;
+}

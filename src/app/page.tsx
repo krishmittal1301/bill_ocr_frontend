@@ -1,7 +1,5 @@
 "use client";
 import React, { useState, useRef ,ChangeEvent} from 'react';
-import ReactDOM from "react-dom/client";
-import RootLayout from './layout';
 import styles from '@/app/home.module.css';
 import '@/app/globals.css';
 import Navbar from './Navbar';
@@ -77,7 +75,7 @@ function HomePage() {
 
 
   return (
-    <RootLayout>
+    <div>
       <Navbar />
       <div className={`${lusitana.className} ${styles.heading1}`}>
         Streamline Your Audit Process: Automate Bill Analysis with <span style={{ color: 'blue' }}>OCR Technology</span>
@@ -97,7 +95,7 @@ function HomePage() {
             onChange={handleFileChange}
             style={{ display: 'none' }}
           />
-          <button onClick={triggerFileInput} className={`${styles.btn} text-black w-64`}>
+          <button onClick={triggerFileInput} className={`${styles.btn} w-64`}>
             Select and Upload the BILL
           </button>
         </div>
@@ -108,7 +106,7 @@ function HomePage() {
       <footer className="text-center text-black mt-6 border-gray-600">
         Designed and developed by Krish Mittal
       </footer>
-    </RootLayout>
+    </div>
   );
 }
 
